@@ -167,7 +167,7 @@ public class ViewController:UIViewController, UIScrollViewDelegate, PhotoSliderI
         // Share Button
         if self.visibleShareButton {
             self.shareButton = UIButton(frame: CGRectZero)
-            let imagePath = self.resourceBundle().pathForResource("PhotoSliderClose", ofType: "png")
+            let imagePath = self.resourceBundle().pathForResource("ic_share_instagram", ofType: "png")
             self.shareButton!.setImage(UIImage(contentsOfFile: imagePath!), forState: UIControlState.Normal)
             self.shareButton!.addTarget(self, action: "shareButtonDidTap:", forControlEvents: UIControlEvents.TouchUpInside)
             self.shareButton!.imageView?.contentMode = UIViewContentMode.Center
